@@ -1,0 +1,108 @@
+Part 1 Reflection
+
+There is no single “best” database. Organizations choose a DBMS based on their business requirements, such as
+1- budget, 2- security needs, 3- scalability requirements, 4- existing technology ecosystem, 5- long-term strategy.
+
+Oracle is often selected by large enterprises,
+SQL Server by Microsoft-focused organizations,
+PostgreSQL by startups and cloud-native companies,
+MySQL by web application developers.
+
+Each database has strengths and trade-offs that make it suitable for different environments
+
+------------------------------------------------------------------------------------------------------------------------
+
+Part 2 Reflection
+
+Oracle is popular in large companies because it is secure, reliable, and can handle a large number of users and transactions.
+Organizations such as banks, telecom companies, and government agencies use Oracle because their systems must run continuously without losing data.
+
+Banks and telecom companies often choose Oracle because they process large amounts of important information every day.
+Oracle provides strong security, backup, recovery, and high availability features that help keep their systems running safely.
+
+Oracle is different from many traditional databases because it includes advanced enterprise features such as: (CDBs, PDBs, RAC, and Data Guard.)
+These features make it easier to manage large systems, improve performance, and reduce downtime.
+
+Oracle also offers different editions for different needs:
+1-Oracle XE is free and mainly used for learning.
+2-Standard Edition is suitable for small and medium businesses.
+3-Enterprise Edition is designed for large organizations that need advanced features.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Part 3 Reflection
+
+Companies choose different databases based on their needs, budget, and long-term goals.
+
+1- A bank might choose Oracle instead of MySQL because Oracle offers stronger security, better reliability, and advanced features for handling large numbers of financial transactions.
+Banks need systems that are available all the time and can protect sensitive customer data.
+
+2- A startup might choose PostgreSQL instead of Oracle because PostgreSQL is free, open-source, and powerful.
+Startups often have limited budgets and prefer a database that provides strong features without expensive licensing costs.
+
+3- Some companies continue using SQL Server because they already use Microsoft technologies such as Windows, Azure, and .NET applications.
+Using SQL Server makes integration easier and reduces training and support costs.
+
+4- Cloud infrastructure affects database decisions because companies want systems that are easy to scale and manage.
+Databases that work well with cloud platforms are often preferred because they support business growth and reduce infrastructure management.
+
+5- Enterprise companies sometimes pay for commercial databases instead of using free alternatives because they need
+professional support, security updates, guaranteed service levels, and advanced enterprise features.
+For large organizations, reliability and support are often more important than saving on licensing costs.
+
+Overall, companies do not choose databases based only on technical features.
+They also consider cost, security, support, scalability, and how well the database fits their business requirements.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Part 4 reflection
+
+Different databases are designed for different types of organizations and systems.
+
+1- Oracle is commonly used in large enterprises, banks, government organizations, and telecom companies because it is secure, reliable, and can handle large amounts of data.
+
+2- SQL Server is often used by companies that already use Microsoft products such as Windows, Azure, and .NET because it integrates well with those technologies.
+
+3- PostgreSQL is popular among startups and cloud-based applications because it is free, powerful, and highly flexible.
+
+4- MySQL is widely used in websites, e-commerce platforms, and small to medium businesses because it is simple, fast, and cost-effective.
+
+Although all databases store and manage data, they differ in areas such as performance, security, scalability, support, and cost.
+Overall, organizations choose a database based on their business needs, budget, expected growth, and existing technology environment.
+The right database depends on the requirements of the organization rather than the database itself being “better” than the others.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Part 5 reflection
+
+Most databases support the same basic features such as tables, relationships, joins, procedures, triggers, and transactions.
+However, companies still choose different databases because they have different costs, performance levels, security features, and support options.
+
+Companies may move from one database to another to save money, improve performance, move to the cloud, or support new business requirements.
+
+Database migration can be difficult because data must be moved safely and applications may need changes to work with the new database.
+
+Migration projects are considered risky because problems can cause data loss, system downtime, or business disruptions.
+
+Database decisions are important because they affect a system’s performance, security, scalability, and future growth for many years.
+
+Overall, companies choose the database that best fits their business needs, budget, and long-term goals.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Part 6 reflection
+
+This investigation helped me understand that choosing a database is not only about writing SQL queries.
+Companies must consider factors such as security, scalability, cost, cloud support, performance, and long-term business requirements.
+
+I learned that different databases are designed for different situations.
+Oracle is commonly used in large enterprise environments, SQL Server works well in Microsoft ecosystems,
+PostgreSQL is popular among startups and cloud-based applications, and MySQL is widely used for web applications.
+
+I also learned that database decisions can affect a system for many years.
+Choosing the right database can improve reliability, performance, and future growth, while choosing the wrong one can create technical and business challenges.
+
+Overall, this investigation showed me that software engineers and system architects focus on business needs and
+system design when selecting technologies, rather than simply choosing the most popular database.
+
+------------------------------------------------------------------------------------------------------------------------
