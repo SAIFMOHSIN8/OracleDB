@@ -1,0 +1,116 @@
+# SQL Set Operations Research
+
+SQL Set Operations are used to combine the results of two or more SELECT statements. The three main set operations are:
+
+- UNION, INTERSECT, EXCEPT (called MINUS in Oracle)
+
+These operations help compare data between tables and retrieve combined or matching records.
+
+---
+
+# 1. UNION
+
+## Definition
+
+UNION combines the results of two SELECT statements and removes duplicate rows.
+
+Use UNION when you want to merge results from multiple queries and display only unique records.
+
+## Syntax
+
+sql SELECT column1, column2 FROM table1  UNION  SELECT column1, column2 FROM table2;
+
+## Rules & Conditions
+
+- Both SELECT statements must return the same number of columns.
+- Corresponding columns must have compatible data types.
+- Column names are taken from the first SELECT statement.
+- Duplicate rows are automatically removed.
+
+-----------------------------------------------------------------------------------------------
+
+# 2. INTERSECT
+
+## Definition
+
+INTERSECT returns only the rows that appear in both SELECT statements.
+
+Use INTERSECT when you need common records between two result sets.
+
+## Syntax
+
+sql SELECT column1 FROM table1  INTERSECT  SELECT column1 FROM table2;
+
+## Rules & Conditions
+
+- Both queries must return the same number of columns.
+- Data types must be compatible.
+- Duplicate rows are removed automatically.
+- Only matching rows are returned.
+
+----------------------------------------------------------------------------------------------
+
+# 3. EXCEPT / MINUS
+
+## Definition
+
+EXCEPT returns rows from the first query that do not exist in the second query.
+
+Oracle uses the keyword MINUS instead of EXCEPT.
+
+Use this operation when you need to find records that exist in one set but not another.
+
+## Syntax (Oracle)
+
+sql SELECT column1 FROM table1  MINUS  SELECT column1 FROM table2;
+
+## Rules & Conditions
+
+- Both queries must return the same number of columns.
+- Data types must be compatible.
+- Duplicate rows are removed automatically.
+- Results come only from the first query.
+
+-----------------------------------------------------------------------------------------------
+
+# UNION vs UNION ALL
+
+## UNION
+
+sql SELECT department_id FROM employees  UNION  SELECT department_id FROM departments;
+
+Characteristics:
+
+- Removes duplicates.
+- Returns only unique records.
+- Requires extra processing to eliminate duplicates.
+
+-----------------------------------------------------------------------------------------------
+
+## UNION ALL
+
+sql SELECT department_id FROM employees  UNION ALL  SELECT department_id FROM departments;
+
+Characteristics:
+
+- Keeps duplicates.
+- Faster than UNION.
+- Useful when duplicate values are required.
+
+--------------------------------------------------------------------------------------------------
+
+# Summary
+
+| Operation | Purpose | Removes Duplicates |
+|------------|----------|-------------------|
+| UNION | Combines results from multiple queries | Yes |
+| UNION ALL | Combines results and keeps duplicates | No |
+| INTERSECT | Returns common rows between queries | Yes |
+| MINUS (EXCEPT) | Returns rows from first query not found in second | Yes |
+
+## Key Rules
+
+1. Same number of columns in each SELECT statement.
+2. Corresponding columns must have compatible data types.
+3. ORDER BY can only be used at the end of the entire set operation.
+4. Oracle uses MINUS instead of EXCEPT.
