@@ -1,0 +1,24 @@
+Part 4 – Reflection
+
+Although applications can perform business logic, enterprise systems still place some logic inside the database
+to improve security, consistency, automation, and performance.
+
+##Views
+help protect sensitive information by allowing users to access only the data they need without exposing underlying tables.
+This improves data security and simplifies reporting.
+
+##Procedures
+centralize business logic inside the database. Instead of repeating the same code in multiple applications,
+a procedure can be reused and maintained in one location.
+
+##Triggers
+automatically respond to database events such as inserts, updates, or deletes.
+They are commonly used for auditing and enforcing business rules without requiring user intervention.
+
+##Scheduler
+Jobs automate routine tasks such as report generation, backups, and maintenance activities.
+This reduces manual work and ensures important processes run on time.
+
+In conclusion, enterprise systems use database objects because they provide secure access, reusable business logic,
+automatic auditing, and scheduled automation. This makes the system easier to manage, maintain,
+and control across multiple applications and users.

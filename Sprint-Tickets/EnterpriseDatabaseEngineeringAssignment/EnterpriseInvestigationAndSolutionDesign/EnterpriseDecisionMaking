@@ -1,0 +1,67 @@
+Part 2 - Enterprise Decision Making
+
+## Scenario 1
+
+Recommended Object:
+View
+
+Reasoning:
+A View can display only Employee Name and Department Name while hiding sensitive information such as salary.
+This provides controlled access and improves data security without exposing the underlying tables.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Scenario 2
+
+Recommended Object:
+Trigger
+
+Reasoning:
+A Trigger can automatically execute whenever a salary update occurs.
+It is commonly used for auditing because it records changes immediately without requiring manual intervention from users or applications.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Scenario 3
+
+Recommended Object:
+Scheduler Job
+
+Reasoning:
+A Scheduler Job can automatically run at a specific date and time.
+It is ideal for generating reports every Friday at 4:00 PM without requiring manual execution by users.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Scenario 4
+
+Recommended Object:
+Procedure
+
+Reasoning:
+A Procedure provides a reusable process that can calculate annual bonuses whenever needed.
+It centralizes the business logic in one place, making maintenance and updates easier.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Scenario 5
+
+Recommended Object:
+Trigger
+
+Reasoning:
+A Trigger can automatically execute whenever an employee's salary is modified.
+It can generate notifications or record events immediately after the salary update occurs.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+## Scenario 6
+
+Recommended Object:
+View
+
+Reasoning:
+A View provides a secure and simplified way to display employee information for dashboards.
+Users can access the required data without direct access to the underlying tables, improving security and data control.
+
+-----------------------------------------------------------------------------------------------------------------------
