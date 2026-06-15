@@ -1,0 +1,111 @@
+Enterprise Database Engineering Assignment
+Part 1 – Research & Understanding
+
+-----------------------------------------------------------------------------------------------------------------------
+
+# Views
+
+### 1. What is a View?
+A View is a virtual table based on a SQL query.
+It does not store data itself but displays data from one or more underlying tables.
+
+### 2. Why do companies use Views?
+Companies use Views to simplify complex queries, provide consistent data access,
+and hide unnecessary table details from users.
+
+### 3. What security benefits do Views provide?
+Views restrict access to sensitive columns and rows, allowing users to see only the data relevant to their role.
+
+### 4. Difference Between Table, View, and Materialized View
+
+| Object | Description |
+---------------------------------------------------
+| Table | Physically stores data in the database. |
+| View | Virtual table that displays data from tables. |
+| Materialized View | Stores query results physically and refreshes periodically. |
+
+### 5. Enterprise Use Cases
+- HR employee information dashboard.
+- Management reporting views.
+- Restricted access to salary or financial data.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+# Stored Procedures
+
+### 1. What is a Stored Procedure?
+A Stored Procedure is a precompiled set of SQL and PL/SQL statements stored in the database and executed when needed.
+
+### 2. Why do companies use Procedures?
+Procedures centralize business logic, improve performance, and reduce code duplication.
+
+### 3. What problems do Procedures solve?
+They eliminate repeated SQL code, enforce business rules, and provide reusable database operations.
+
+### 4. Difference Between Procedure and Function
+
+| Object | Description |
+-------------------------------------------
+| Procedure | Performs actions and may return values through parameters. |
+| Function | Returns a single value and can be used inside SQL statements. |
+
+### 5. Enterprise Use Cases
+- Annual bonus calculations.
+- Payroll processing.
+- Bulk employee updates.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+# Triggers
+
+### 1. What is a Trigger?
+A Trigger is a database object that automatically executes when a specific event occurs,
+such as INSERT, UPDATE, or DELETE.
+
+### 2. Why do companies use Triggers?
+Triggers automate auditing, validation, and enforcement of business rules.
+
+### 3. Difference Between BEFORE Trigger and AFTER Trigger
+
+| Trigger Type | Description |
+--------------------------------------------------------
+| BEFORE Trigger | Executes before the database operation occurs. |
+| AFTER Trigger | Executes after the database operation is completed. |
+
+### 4. What are the risks of excessive Trigger usage?
+Too many triggers can reduce performance, increase complexity, and make troubleshooting more difficult.
+
+### 5. Enterprise Use Cases
+- Salary change auditing.
+- Automatic history tracking.
+- Data validation before updates.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+# Scheduler Jobs
+
+### 1. What is a Scheduler Job?
+A Scheduler Job is a database task that runs automatically at a specified time or schedule.
+
+### 2. Why do companies use Scheduler Jobs?
+They automate routine processes and reduce manual intervention.
+
+### 3. Difference Between Trigger and Scheduler Job
+
+| Object | Description |
+-----------------------------------------------------------------------
+| Trigger | Runs automatically when a database event occurs. |
+| Scheduler Job | Runs automatically based on a predefined schedule. |
+
+### 4. What processes are commonly automated?
+- Report generation.
+- Database backups.
+- Data cleanup and maintenance.
+
+### 5. Enterprise Use Cases
+- Weekly management reports.
+- Daily backup jobs.
+- Monthly compliance and audit reports.
+
+Research Sources Validated: Oracle Database Documentation concepts for Views, Materialized Views,
+PL/SQL Procedures, Triggers, and Oracle Scheduler; definitions align with Oracle 19c enterprise usage and best practices.
